@@ -39,4 +39,5 @@ def demo_basic():
 if __name__ == "__main__":
     demo_basic()
 
+# export MASTER_ADDR=localhost
 # torchrun --nnodes=1 --nproc_per_node=4 --rdzv_id=100 --rdzv_backend=c10d --rdzv_endpoint=$MASTER_ADDR:29400 elastic_ddp.py
